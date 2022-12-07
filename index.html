@@ -26,9 +26,13 @@
                     <img src="img/icon.png" alt="Kids Joy Logo" loading="lazy">
                 </a>
                 <ul>
-                    
+                    <form class="form-inline my-2 my-lg-0" id="bar">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                     <li><a class="nav-link" href="index.html">Início</a></li>
                     <li><a class="nav-link" href="int.html">Instituições</a></li>
+                    <li><a class="nav-link" href="#contato">Contato</a></li>
                     <li><a class="nav-link" href="usuario.html">
                         <i class="fa fa-user-circle"></i>
                         </a>
@@ -38,19 +42,26 @@
                 <a style="font-size: 30px; animation-name: none;" id="myIcon" class="icon" onclick="openNav()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <div id="mySidenav" class="sidenav">
+                <div id="mySidenav" class="sidenav" style="z-index: 1500;">
                     <a onclick="closeNav()" class="nav-link" href="usuario.html">
                         <i class="fa fa-user-circle"></i>
                     </a>
+                    <form class="form-inline my-2 my-lg-0" id="bar">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                     <a class="nav-link" href="index.html">Início</a>
                     <a class="nav-link" href="int.html">Instituições</a>
+                    <a class="nav-link" href="#contato">Contato</a>
                     <a class="nav-link" href="fav.html">Favoritados</a>
                     <a class="nav-link" href="hist.html">Histórico</a>
                 </div>
             </nav>
         </header>
 
-        <div class="space"></div>
+        <div class="begin">
+            <img src="img/cloud.png">
+        </div>
 
         <main>
             <div class="border">
@@ -79,7 +90,7 @@
 
                         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
+                             <span class="sr-only">Anterior</span>
                         </a>
                         <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -93,48 +104,164 @@
                 <div class="space-line" id="horizontal-line">
                 </div>
             </div>
-
-		<div class="about">
-            <h1>Instituições</h1>
-        </div>
-        <section class="text-content container reveal fade-top">
-            <p>
-            </p>
-        </section>
+            <section class="instituicoes">
+                <h2>Instituições Recomendadas</h2><br>
+                <div class="container-fluid">
+                    <div class="card-deck"> 
+                        <div class="card container reveal fade-left">
+                            <img class="card-img-top" src="../img\bones\bone1.jpg" alt="Imagem de capa do card">
+                            <h5 class="card-title">Nike x Parra</h5>
+                            <div class="card-body"><p class="card-text">R$ 299,90</p></div>
+                            <a href="#"> <button class="btn my-2 my-sm-0">Ir para o produto</button> </a>
+                        </div> 
+                        <div class="card container reveal fade-left">
+                            <img class="card-img-top" src="../img\bones\bone1.jpg" alt="Imagem de capa do card">
+                            <h5 class="card-title">Nike x Parra</h5>
+                            <div class="card-body"><p class="card-text">R$ 299,90</p></div>
+                            <a href="#"> <button class="btn my-2 my-sm-0">Ir para o produto</button> </a>
+                        </div>
+                        <div class="card container reveal fade-left">
+                            <img class="card-img-top" src="../img\bones\bone1.jpg" alt="Imagem de capa do card">
+                            <h5 class="card-title">Nike x Parra</h5>
+                            <div class="card-body"><p class="card-text">R$ 299,90</p></div>
+                            <a href="#"> <button class="btn my-2 my-sm-0">Ir para o produto</button> </a>
+                        </div>
+                    </div>
+                </div>
+		    </section>
         
-		<div id="prod" class="space" style="margin-bottom: 2.5em;">
-            <div class="space-line">
+            <div class="space" style="margin-bottom: 2.5em;">
+                <div class="space-line"></div>
             </div>
-		</div>
 
-        <section class="prod">
-            <h1> Produções</h1>
-            <div class="container reveal fade-top"><h2>Confira aqui nosso portifólio!</h2></div>
-            <div class="type-images" id="type-images">
-                <span class="ty-1">
-                    <figure class="img-section container reveal fade-left">
-                        <img src="img/fp.png">
-                        <figcaption><a href="https://www.roblox.com/games/164852721/Fighter-Powers">Fighter Powers</a></figcaption>
-                    </figure>
-                    <figure class="img-section container reveal fade-left">
-                        <img src="img/green.png">
-                        <figcaption><a href="https://github.com/mrguisamuel/green">Green Project</a></figcaption>
-                    </figure>
-                </span>
-                <span class="ty-2">
-                    <figure class="img-section  container reveal fade-right">
-                        <img src="img/anemostudy.png">
-                        <figcaption><a href="https://github.com/GGGCD-TCC/school-management-system">Anemo Study</a></figcaption>
-                    </figure>
-                    <figure class="img-section  container reveal fade-right">
-                        <img src="img/droctopus.png">
-                        <figcaption><a href="school_game.html"> Dr. Octopus School</a></figcaption>
-                    </figure>
-                </span>
-            </div>
-            <br><br>
-        </section>
+            <section class="prod">
+                <h1>Produções</h1>
+                <div class="container reveal fade-top"><h2>Confira aqui nosso portifólio!</h2></div>
+                <div class="type-images" id="type-images">
+                    <span class="ty-1">
+                        <figure class="img-section container reveal fade-left">
+                            <img src="img/fp.png">
+                            <figcaption><a href="https://www.roblox.com/games/164852721/Fighter-Powers">Fighter Powers</a></figcaption>
+                        </figure>
+                        <figure class="img-section container reveal fade-left">
+                            <img src="img/green.png">
+                            <figcaption><a href="https://github.com/mrguisamuel/green">Green Project</a></figcaption>
+                        </figure>
+                    </span>
+                    <span class="ty-2">
+                        <figure class="img-section  container reveal fade-right">
+                            <img src="img/anemostudy.png">
+                            <figcaption><a href="https://github.com/GGGCD-TCC/school-management-system">Anemo Study</a></figcaption>
+                        </figure>
+                        <figure class="img-section  container reveal fade-right">
+                            <img src="img/droctopus.png">
+                            <figcaption><a href="school_game.html"> Dr. Octopus School</a></figcaption>
+                        </figure>
+                    </span>
+                </div>
+                <br><br>
+            </section>
         </main>
+
+    <div id="contato">
+        <div class="container-fluid">
+            <div id="title1"><h1>Página de Contato</h1></div><br>
+                <div class="page-header">
+                    <h1></h1> </div>
+                <form class="form-horizontal" name="formcontato" method="POST" action="../salva_mensagem.php">
+                    <div class="form-group">
+                       <label for="inputEmail3" class="col-sm-2 control-label">
+                           Nome: 
+                        </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="nome" placeholder="Nome Completo" required>
+                        </div>
+                    </div>                        
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">
+                            E-mail: 
+                        </label>
+                        <div class="col-sm-10">
+                             <input type="email" class="form-control" name="email" placeholder="Seu melho e-mail" required>
+                        </div>
+                    </div>            
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">
+                            Assunto: 
+                        </label>
+                        <div class="col-sm-10">
+                             <input type="text" class="form-control" name="assunto" placeholder="Assunto do contato" required>
+                        </div>
+                    </div>
+                            
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">
+                            Mensagem: 
+                        </label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="mensagem"></textarea>
+                        </div>
+                    </div>      
+                    <input class="btn btn-success" type="submit" value="Enviar" onclick="return validar_form_contato()">
+                </form>
+            </div>
+        </div>
+    </div> 
+<!--rodapé --> 
+        <div class="footer">
+            <div class="contain">
+                <div class="col">
+                    <h1>Sobre nós</h1>
+                        <ul>
+                            <p>
+                                Sistemas de doações são mecanismo já consagrados em nossa sociedade. 
+                                Através deles, pessoas de diferentes locais são capazes de ajudar em causas 
+                                com diversos tipos de entregas, seja em dinheiro ou em objetos. 
+                                Tais sistemas são essenciais para manter uma sociedade unida e diversa, 
+                                com o objetivo de tornar o mundo um melhor lugar para todos.
+                            </p>
+                        </ul>
+                </div>
+                <div class="col">
+                    <h1>Institucional</h1>
+                    <ul>
+                        <li>Politica de Privacidade</li>
+                        <li>Politica de Entrega</li>
+                        <li>Contate-Nos</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Serviço ao cliente</h1>
+                    <ul>
+                        <li>Meus pedidos</li>
+                        <li>Cancelamentos</li>
+                        <li>Trocas & Devoluções</li>
+                        <li>Guia de Segurança Digital</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Central de Relacionamento</h1>
+                    <ul>
+                        <li>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Tire suas dúvidas </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Formas de pagamento</h1>
+                    <ul>
+                        <p>Divida suas compras em  2 cartões e pague em até 10x sem juros</p>
+                        <li><img src="../img/outras/pagamento.png" style="width: 255px;"></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+            <p>&copy; Autor | All rights reserved. </p>
+            </div>
+        </div>
         <footer>
             <p>2022 © Kids Joy<br><!-- texto que vai embaixo do copyright --></p>
         </footer>

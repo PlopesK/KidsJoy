@@ -40,8 +40,22 @@ function reveal() {
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
+
+/* Animation takes a while to stop */
+$(document).ready(function () {
+  const title = document.querySelectorAll('a');
+
+  $(title).on("animationiteration", function () {
+    $(this).removeClass("animated");
+    console.log("out");
+  });
+
+  $(title).hover(function () {
+    $(this).addClass("animated");
+    console.log("over");
+  });
+});
 
 /* Loading */
 $(window).on("load", function(){
