@@ -7,13 +7,12 @@
     padding: 0;
     outline: none;
     font-family: 'Poppins', sans-serif;
-
 }
 
 a {
     text-decoration: none;
-    font-size: 18px;
-    color: #326CD1;
+    color: white;
+    font-weight: bold;
 }
 
 body{
@@ -21,6 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .login {
@@ -56,14 +56,29 @@ body{
     width: 383px;
 }
 
+#email, #password{
+    background-color: rgba(189, 223, 255, 1);
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+}
+
 .button {
     align-items: flex-start;
     background-color: var(--robins-egg-blue);
+    color: white;
     border-radius: 40px;
     display: flex;
     margin-right: 1px;
     margin-top: 9px;
     min-width: 335px;
+    cursor: pointer;
+}
+
+.button:hover{
+    animation: link 3s infinite;
 }
 
 .logo {
@@ -103,6 +118,22 @@ body{
       animation: rotate 2s infinite;
   }
 
+
+/* Animations */
+@keyframes link {
+    from {
+      font-size: 100%;
+    }
+
+    50% {
+      font-size: 115%;
+    }
+
+    to {
+      font-size: 100%;
+    }
+  }
+
 @keyframes rotate {
   50% {
       transform: rotateZ(0.5turn);
@@ -112,3 +143,4 @@ body{
     transform: rotateZ(1turn);
   }
 }
+
