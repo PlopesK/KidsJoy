@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-:root {
-    --robins-egg-blue: rgba(0, 188, 212, 1);
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -11,21 +13,46 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    font-family: 'Poppins', cursive;
+    color: black;
+    line-height: 1.6;
     min-height: 100vh;
-    overflow-x: hidden;
+    background-color: #0897da;
+    font-size: 20px;
+}
+
+.begin {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    background: url("../img/cloud2.png") repeat-x;
+}
+
+.trem {
+    position: relative;
+    height: 153px; 
+    left: 1px;
+    object-fit: cover;
+    top: 120px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.trem img {
+    width: 50%;
+    height: 210%;
 }
 
 .login {
     align-items: center;
-    background-color: white;
     border: 1px none;
     display: flex;
     flex-direction: column;
@@ -34,13 +61,43 @@ body{
     width: 360px;
 }
 
+.checkboxes {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    left: 1px;
+    min-height: 136px;
+    position: absolute; 
+    top: 371px;
+    width: 362px;
+    padding-top: 30px;
+}
+
+.checkbox {
+    align-items: center; 
+    display: flex; 
+    gap: 9px;
+    margin-right: 2px; 
+    min-width: 308px;
+}
+
+.checkbox p {
+    height: 21px; 
+    letter-spacing: 0;
+    line-height: normal; 
+    margin-bottom: 3px;
+    width: 100%;
+}
+
 .bem-vindo {
-    height: 47px;
+    align-self: flex-start; 
+    font-weight: 300;
+    height: 26px;
     letter-spacing: 0;
     line-height: normal;
-    margin-top: 52px;
-    text-align: center;
-    width: 320px;
+    text-align: center; width: 349px;
 }
 
 .valign-text-middle {
@@ -49,26 +106,9 @@ body{
     justify-content: center;
 }
 
-.field {
-    height: 47px;
-    letter-spacing: 0;
-    line-height: normal;
-    width: 383px;
-}
-
-#email, #password{
-    background-color: rgba(189, 223, 255, 1);
-    color: black;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    width: 400px;
-    height: 30px;
-}
-
 .button {
     align-items: flex-start;
-    background-color: var(--robins-egg-blue);
-    color: white;
+    background-color: rgba(0, 188, 212, 1);
     border-radius: 40px;
     display: flex;
     margin-right: 1px;
@@ -81,11 +121,8 @@ body{
     animation: link 3s infinite;
 }
 
-.logo {
-    height: 100px;
-    margin-top: 48px;
-    object-fit: cover;
-    width: 360px;
+.button a {
+    color: white;
 }
 
 .fazer-login { 
@@ -97,8 +134,19 @@ body{
     width: 335px;
 }
 
-/* Loading */
-  .load-wrapper.active {
+@media(max-width: 700px)
+{
+    .trem {
+        top: 110px; 
+    }
+
+    .trem img {
+        width: 100%;
+    }
+}
+
+ /* Loading */
+ .load-wrapper.active {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +166,6 @@ body{
       margin: 1px;
       animation: rotate 2s infinite;
   }
-
 
 /* Animations */
 @keyframes link {
@@ -144,4 +191,3 @@ body{
     transform: rotateZ(1turn);
   }
 }
-
