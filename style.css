@@ -417,16 +417,6 @@ main {
     background: linear-gradient(90deg,#1f2c82,#3951ED);
 }
 
-/* Normal Text */
-.text-content {
-    display: flex;
-    align-items: top;
-    font-size: 1.4vw;
-    margin-bottom: 80px;
-    text-align: center;
-    justify-content: center;
-}
-
 /* Reveal Text Slowly */
 .reveal {
     position: relative;

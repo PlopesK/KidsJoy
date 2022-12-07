@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+:root {
+    --robins-egg-blue: rgba(0, 188, 212, 1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #326CD1;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login {
+    align-items: center;
+    background-color: white;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    padding: 105px 0;
+    width: 360px;
+}
+
+.bem-vindo {
+    height: 47px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 52px;
+    text-align: center;
+    width: 320px;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field {
+    height: 47px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 383px;
+}
+
+.button {
+    align-items: flex-start;
+    background-color: var(--robins-egg-blue);
+    border-radius: 40px;
+    display: flex;
+    margin-right: 1px;
+    margin-top: 9px;
+    min-width: 335px;
+}
+
+.logo {
+    height: 100px;
+    margin-top: 48px;
+    object-fit: cover;
+    width: 360px;
+}
+
+.fazer-login { 
+    height: 47px; 
+    letter-spacing: 0;
+    line-height: normal; 
+    margin-top: -1px;
+    text-align: center; 
+    width: 335px;
+}
+/* Loading */
+  .load-wrapper.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2c82;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  .load {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1px;
+      animation: rotate 2s infinite;
+  }
+
+@keyframes rotate {
+  50% {
+      transform: rotateZ(0.5turn);
+  }
+
+  100% {
+    transform: rotateZ(1turn);
+  }
+}
