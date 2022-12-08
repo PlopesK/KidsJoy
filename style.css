@@ -537,42 +537,6 @@ footer {
     z-index: 4;
 }
 
-/* Contact */
-.contato {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.field {
-    height: 47px;
-    letter-spacing: 0;
-    line-height: normal;
-    width: 383px;
-}
-
-.inst {
-    background-color: #3951ED;
-    height: 60%;
-    width: 70%;
-    z-index: 3;
-}
-
-.button {
-    background-color: rgba(0, 188, 212, 1);
-    color: white;
-    border-radius: 40px;
-    display: flex;
-    margin-right: 1px;
-    margin-top: 9px;
-    min-width: 335px;
-    cursor: pointer;
-}
-
-.button:hover{
-    animation: link 3s infinite;
-}
-
 /* Mobile Responsive */
 @media(max-width: 1200px){
     .img-book {
