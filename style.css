@@ -31,6 +31,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 3;
+    display: flex;
+    justify-content: center;
 }
 
 header ul {
@@ -68,7 +70,7 @@ a:hover {
 
 /* Navbar */
 .navbar {
-    background: -webkit-gradient(linear, left top, right top, from(#022738), to(#099ADE), to(#0AACF7));
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
